@@ -1,16 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
 import Link from "next/link";
 import { Heart, LogIn, UserPlus, Activity, TrendingUp, Shield } from "lucide-react";
-import { testSupabaseConnection } from "@/lib/test-supabase";
 
 export default function HomePage() {
-  useEffect(() => {
-    // Executar teste de integração ao carregar a página
-    testSupabaseConnection();
-  }, []);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Hero Section */}
